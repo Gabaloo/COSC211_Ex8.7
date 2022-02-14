@@ -8,7 +8,7 @@ Print point indices.
 
 Utilizes methods:
  
-inputArray - no parameters, returns a 1D matrix of doubles, used to package coordinates of each point
+inputArray - no parameters, returns a 2D matrix of doubles
 distance - Accepts 6 double parameters, the x, y, and z coordinates of two points.  Calculates distance between two points in 3D space.  Outputs distance value as double
 closestPoints - Accepts 2D matrix.  Works down the rows of the matrix, starting by calculating the distance between the first and second points, and ends at the distance calculation for the second to last and last points.  shortestDistance value is updated as necessary.
 displayClosestPoint - displays coordinates of point indices.
@@ -17,7 +17,8 @@ Tests methods:
 
 inputArray
 Verify input values are correctly stored in array.
-Verify array length is always 3 for 3 dimensional space.
+Verify array row length is always 3 for 3 dimensional space.
+Verify column length matches input
 
 distance
 Verify correct distance is calculated.
